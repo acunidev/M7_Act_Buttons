@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:stretchColumns="0,1,2"
+  android:gravity="center"
+  tools:context=".Tablelayout">
+
+  <TableRow>
+    <TextView android:text="Celda 1.1"/>
+    <TextView android:text="Celda 1.2"/>
+    <TextView android:text="Celda 1.3"/>
+  </TableRow>
+  <TableRow>
+    <TextView android:text="Celda 2.1"/>
+    <TextView android:text="Celda 2.2"/>
+    <TextView android:text="Celda 2.3"/>
+  </TableRow>
+  <TableRow>
+    <TextView
+      android:text="Celda doble de ancho 3.1"
+      android:layout_span="2"/>
+    <TextView android:text="Celda 3.2"/>
+  </TableRow>
+  <TableRow>
+    <ImageView
+      android:id="@+id/lotrImage"
+      android:layout_width="134dp"
+      android:layout_height="419dp"
+      android:src="@drawable/lotr1"/>
+    <TextView
+      android:id="@+id/texLotr"
+      android:text="Lord of the rings"
+      android:layout_gravity="center"
+      />
+    <Button
+      android:id="@+id/shareBtn"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="COMPARTIR"
+      />
+
+  </TableRow>
+</TableLayout>

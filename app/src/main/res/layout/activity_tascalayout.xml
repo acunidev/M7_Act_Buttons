@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:gravity="center"
+  tools:context=".Tascalayout">
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="hola"/>
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="237dp"
+    android:src="@drawable/lotr1"/>
+
+
+  <TableLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center">
+    <TableRow>
+      <ImageView
+        android:id="@+id/lotrImage"
+        android:layout_width="134dp"
+        android:layout_height="419dp"
+        android:src="@drawable/lotr1"/>
+      <TextView
+        android:id="@+id/texLotr"
+        android:text="Lord of the rings"
+        android:layout_gravity="center"
+        />
+      <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="176dp"
+        android:layout_height="match_parent"
+        android:text="COMPARTIR"/>
+    </TableRow>
+  </TableLayout>
+</LinearLayout>

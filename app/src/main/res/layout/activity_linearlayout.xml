@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical"
+  tools:context=".LinearlayoutAct">
+
+
+  <Button
+    android:id="@+id/btnNextLin"
+    android:drawableBottom="@android:drawable/ic_dialog_alert"
+    android:backgroundTint="@color/black"
+    app:cornerRadius="15dp"
+    android:text="Next Layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+  <Button
+    android:id="@+id/btnBackLin"
+    android:drawableBottom="@android:drawable/ic_dialog_alert"
+    android:backgroundTint="@color/black"
+    app:cornerRadius="15dp"
+    android:text="Previous Layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+  <ToggleButton
+    android:id="@+id/btnAprovado"
+    android:textOn="Muy Aprobado"
+    android:textOff="Aprobado"
+    android:drawableTop="@android:drawable/arrow_down_float"
+    android:drawableStart="@android:drawable/arrow_down_float"
+    android:drawableEnd="@android:drawable/arrow_down_float"
+    android:drawableBottom="@android:drawable/arrow_down_float"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="COMPARTIR"/>
+
+  <ImageView
+    android:id="@+id/lotrImage"
+    android:layout_width="249dp"
+    android:layout_height="193dp"
+    android:contentDescription="TODO"
+    android:src="@mipmap/ic_launcher"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Linear Layout"
+    android:textSize="25dp"/>
+
+
+</LinearLayout>
