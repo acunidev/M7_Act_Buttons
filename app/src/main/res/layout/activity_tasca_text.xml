@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".TascaText">
+
+  <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/lotr1"
+    app:layout_constraintBottom_toTopOf="@id/txtUserName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteY="16dp" />
+
+  <EditText
+    android:id="@+id/txtUserName"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:backgroundTint="@color/teal_200"
+    android:drawableEnd="@android:drawable/ic_menu_myplaces"
+    android:hint="@string/nom"
+    app:layout_constraintBottom_toTopOf="@id/txtCognom"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+  <EditText
+    android:id="@+id/txtCognom"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:backgroundTint="@color/teal_200"
+    android:drawableEnd="@android:drawable/ic_menu_myplaces"
+    android:hint="@string/cognom"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtUserName" />
+
+  <EditText
+    android:id="@+id/txtTelf"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:backgroundTint="@color/teal_200"
+    android:drawableEnd="@android:drawable/stat_sys_phone_call"
+    android:drawableTint="@color/teal_200"
+    android:hint="@string/telf"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtCognom" />
+
+  <EditText
+    android:id="@+id/txtMail"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="@color/teal_200"
+    android:drawableRight="@android:drawable/ic_dialog_email"
+    android:hint="@string/email"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtTelf" />
+
+  <TextView
+    android:id="@+id/txtDades"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:textAlignment="textStart"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtMail"
+    app:layout_constraintVertical_bias="0.159"
+    tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
@@ -12,71 +10,80 @@
     android:id="@+id/btnAct"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="270dp"
     android:layout_marginStart="100dp"
+    android:layout_marginTop="270dp"
     android:text="COMPARTIR"
-    android:textSize="25sp"/>
+    android:textSize="25sp" />
 
   <Switch
     android:id="@+id/btnSwitch"
-    android:textStyle="bold"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="35dp"
     android:layout_gravity="center"
+    android:layout_marginTop="35dp"
     android:text="Añadir a favoritos"
     android:textAllCaps="true"
-    tools:ignore="UseSwitchCompatOrMaterialXml"/>
+    android:textStyle="bold"
+    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
   <ImageButton
     android:id="@+id/btnStar"
     android:layout_width="30dp"
     android:layout_height="22dp"
+    android:layout_gravity="center"
     android:layout_marginTop="65dp"
     android:layout_marginEnd="35dp"
-    android:layout_gravity="center"
-    android:padding="16dp"
     android:background="#00ffffff"
     android:contentDescription="Fav star"
-    android:src="@android:drawable/btn_star_big_off"/>
+    android:padding="16dp"
+    android:src="@android:drawable/btn_star_big_off" />
 
   <ImageButton
     android:id="@+id/btnStar2"
     android:layout_width="27dp"
     android:layout_height="24dp"
-    android:layout_marginTop="65dp"
     android:layout_gravity="center"
-    android:padding="16dp"
+    android:layout_marginTop="65dp"
     android:background="#00ffffff"
     android:contentDescription="Fav star"
-    android:src="@android:drawable/btn_star_big_off"/>
+    android:padding="16dp"
+    android:src="@android:drawable/btn_star_big_off" />
 
   <ImageButton
     android:id="@+id/btnStar3"
     android:layout_width="24dp"
     android:layout_height="31dp"
-    android:layout_marginTop="65dp"
-    android:layout_marginStart="35dp"
     android:layout_gravity="center"
-    android:padding="16dp"
+    android:layout_marginStart="35dp"
+    android:layout_marginTop="65dp"
     android:background="#00ffffff"
     android:contentDescription="Fav star"
-    android:src="@android:drawable/btn_star_big_off"/>
+    android:padding="16dp"
+    android:src="@android:drawable/btn_star_big_off" />
 
   <ImageButton
     android:id="@+id/btnNext"
     android:layout_width="61dp"
     android:layout_height="68dp"
-    android:layout_marginTop="125dp"
     android:layout_gravity="center"
+    android:layout_marginTop="125dp"
     android:background="@android:drawable/ic_media_play"
     android:backgroundTint="@color/purple_700"
-    android:contentDescription="backArrow"/>
+    android:contentDescription="backArrow" />
+
+  <Button
+    android:id="@+id/btnTascaFormulari"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="200dp"
+    android:text="Tasca Formulari" />
 
   <ImageView
     android:layout_width="249dp"
     android:layout_height="193dp"
-    android:layout_marginTop="70dp"
     android:layout_marginStart="70dp"
+    android:layout_marginTop="70dp"
     android:background="@drawable/lotr1"
-    android:contentDescription="Lotr1"/>
+    android:contentDescription="Lotr1" />
 </FrameLayout>

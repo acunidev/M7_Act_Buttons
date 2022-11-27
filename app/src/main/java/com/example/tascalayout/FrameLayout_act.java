@@ -1,12 +1,12 @@
 package com.example.tascalayout;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 
 public class FrameLayout_act extends AppCompatActivity implements OnClickListener {
 
@@ -15,8 +15,7 @@ public class FrameLayout_act extends AppCompatActivity implements OnClickListene
   private ImageButton btnStar3;
   private ImageButton btnNext;
   private boolean isPressedBtnStar;
-  private boolean isPressedBtnStar2;
-  private boolean isPressedBtnStar3;
+  private Button btnGoButtonsExtended;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -30,14 +29,16 @@ public class FrameLayout_act extends AppCompatActivity implements OnClickListene
     btnStar2 = (ImageButton) findViewById(R.id.btnStar2);
     btnStar3 = (ImageButton) findViewById(R.id.btnStar3);
     btnNext = (ImageButton) findViewById(R.id.btnNext);
+    btnGoButtonsExtended = findViewById(R.id.btnTascaFormulari);
 
     btnStar.setOnClickListener(this);
     btnStar2.setOnClickListener(this);
     btnStar3.setOnClickListener(this);
     btnNext.setOnClickListener(this);
+    btnGoButtonsExtended.setOnClickListener(this);
+
   }
 
-  @SuppressLint("NonConstantResourceId")
   @Override
   public void onClick(View view) {
     switch (view.getId()) {
@@ -66,6 +67,12 @@ public class FrameLayout_act extends AppCompatActivity implements OnClickListene
       case R.id.btnNext:
         Intent intent = new Intent(this, Gridlayout.class);
         startActivity(intent);
+        break;
+
+      case R.id.btnTascaFormulari:
+        Intent te = new Intent(this, TascaText.class);
+        startActivity(te);
+        break;
     }
   }
 }

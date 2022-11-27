@@ -14,27 +14,33 @@
     android:theme="@style/Theme.TascaLayout"
     tools:targetApi="31">
     <activity
-      android:exported="false"
-      android:name=".Tascalayout"/>
+      android:name=".TascaText"
+      android:exported="false" />
     <activity
-      android:exported="false"
-      android:name=".Relativelayout"/>
+      android:name=".ButtonsExtended"
+      android:exported="true"></activity>
     <activity
-      android:exported="false"
-      android:name=".Gridlayout"/>
+      android:name=".Tascalayout"
+      android:exported="false" />
     <activity
-      android:exported="false"
-      android:name=".Tablelayout"/>
+      android:name=".Relativelayout"
+      android:exported="false" />
     <activity
-      android:exported="false"
-      android:name=".LinearlayoutAct"/>
+      android:name=".Gridlayout"
+      android:exported="false" />
     <activity
-      android:exported="true"
-      android:name=".FrameLayout_act">
+      android:name=".Tablelayout"
+      android:exported="false" />
+    <activity
+      android:name=".LinearlayoutAct"
+      android:exported="false" />
+    <activity
+      android:name=".FrameLayout_act"
+      android:exported="true">
       <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
-
-        <category android:name="android.intent.category.LAUNCHER"/>
+        <action android:name="android.intent.action.MAIN" />
+        <!--  -->
+        <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
   </application>

@@ -9,9 +9,10 @@
   tools:context=".Tascalayout">
 
   <Button
+    android:id="@+id/btnBack2Start"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="hola"/>
+    android:text="Go back to start"/>
   <ImageView
     android:layout_width="wrap_content"
     android:layout_height="237dp"
@@ -34,10 +35,10 @@
         android:layout_gravity="center"
         />
       <Button
-        android:id="@+id/shareBtn"
+        android:id="@+id/btnBackTasca"
         android:layout_width="176dp"
         android:layout_height="match_parent"
-        android:text="COMPARTIR"/>
+        android:text="Back"/>
     </TableRow>
   </TableLayout>
 </LinearLayout>
