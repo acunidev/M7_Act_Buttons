@@ -1,12 +1,11 @@
 package com.example.tascalayout;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 
 public class Tascalayout extends AppCompatActivity implements OnClickListener {
 
@@ -27,6 +26,12 @@ public class Tascalayout extends AppCompatActivity implements OnClickListener {
     btnNext.setOnClickListener(this);
   }
 
+  public void goToTascaLayout() {
+//    Intent intent = new Intent(this, FrameLayout_act.class);
+//    startActivity(intent);
+    startActivity(new Intent(this, LinearlayoutAct.class));
+  }
+
   @Override
   public void onClick(View view) {
     switch (view.getId()) {
@@ -35,7 +40,7 @@ public class Tascalayout extends AppCompatActivity implements OnClickListener {
         startActivity(start);
       case R.id.btnBackTasca:
         startActivity(new Intent(this, Tablelayout.class));
-        
+
     }
   }
 }

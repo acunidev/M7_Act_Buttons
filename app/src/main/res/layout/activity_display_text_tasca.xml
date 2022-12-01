@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical"
+  tools:context=".DisplayTextTasca">
+
+  <TextView
+    android:id="@+id/displaySpinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Fruita"
+    android:textSize="30dp" />
+
+  <TextView
+    android:id="@+id/displayNom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Nom"
+    android:textSize="25dp" />
+
+  <TextView
+    android:id="@+id/displayCognom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Cognom"
+    android:textSize="25dp" />
+
+  <TextView
+    android:id="@+id/displayEmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Email"
+    android:textSize="25dp" />
+
+  <TextView
+    android:id="@+id/displayTelf"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Telf"
+    android:textSize="25dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

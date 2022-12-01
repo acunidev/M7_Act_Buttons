@@ -6,84 +6,114 @@
   android:layout_height="match_parent"
   tools:context=".TascaText">
 
-  <ImageView
-    android:id="@+id/imageView"
-    android:layout_width="100dp"
+  <Button
+    android:id="@+id/formSave"
+    android:layout_width="wrap_content"
     android:layout_height="100dp"
-    android:layout_marginTop="50dp"
-    android:background="@drawable/lotr1"
-    app:layout_constraintBottom_toTopOf="@id/txtUserName"
+    android:layout_marginEnd="43dp"
+    android:layout_marginBottom="32dp"
+    android:text="Guardar"
+    app:layout_constraintBottom_toBottomOf="@+id/formTelf"
     app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/formCognom" />
+
+  <Spinner
+    android:id="@+id/customSpinnerFruit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="72dp"
+    android:layout_marginTop="60dp"
+    android:layout_marginEnd="72dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.547"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    tools:layout_editor_absoluteY="16dp" />
+    app:layout_constraintTop_toTopOf="parent" />
 
   <EditText
-    android:id="@+id/txtUserName"
-    android:layout_width="250dp"
+    android:id="@+id/formCognom"
+    android:layout_width="0dp"
     android:layout_height="wrap_content"
-    android:layout_marginTop="50dp"
-    android:backgroundTint="@color/teal_200"
-    android:drawableEnd="@android:drawable/ic_menu_myplaces"
-    android:hint="@string/nom"
-    app:layout_constraintBottom_toTopOf="@id/txtCognom"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.496"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-  <EditText
-    android:id="@+id/txtCognom"
-    android:layout_width="250dp"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="12dp"
+    android:layout_marginStart="26dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="37dp"
     android:backgroundTint="@color/teal_200"
     android:drawableEnd="@android:drawable/ic_menu_myplaces"
     android:hint="@string/cognom"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintEnd_toStartOf="@+id/formSave"
+    app:layout_constraintHorizontal_bias="0.123"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txtUserName" />
+    app:layout_constraintTop_toBottomOf="@+id/formName" />
 
   <EditText
-    android:id="@+id/txtTelf"
-    android:layout_width="250dp"
+    android:id="@+id/formName"
+    android:layout_width="200dp"
     android:layout_height="wrap_content"
-    android:layout_marginTop="12dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="120dp"
+    android:backgroundTint="@color/teal_200"
+    android:drawableEnd="@android:drawable/ic_menu_myplaces"
+    android:hint="@string/nom"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints" />
+
+  <EditText
+    android:id="@+id/formTelf"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
     android:backgroundTint="@color/teal_200"
     android:drawableEnd="@android:drawable/stat_sys_phone_call"
     android:drawableTint="@color/teal_200"
     android:hint="@string/telf"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintHorizontal_bias="0.123"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txtCognom" />
+    app:layout_constraintTop_toBottomOf="@+id/formCognom" />
 
   <EditText
-    android:id="@+id/txtMail"
-    android:layout_width="250dp"
+    android:id="@+id/formMail"
+    android:layout_width="200dp"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="8dp"
     android:backgroundTint="@color/teal_200"
     android:drawableRight="@android:drawable/ic_dialog_email"
     android:hint="@string/email"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintHorizontal_bias="0.123"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txtTelf" />
+    app:layout_constraintTop_toBottomOf="@+id/formTelf" />
 
   <TextView
-    android:id="@+id/txtDades"
+    android:id="@+id/tascaTextDades"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="Placeholder"
     android:textAlignment="textStart"
     android:textSize="10sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.351"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/formMail"
+    tools:ignore="NotSibling,SmallSp" />
+
+  <RelativeLayout
+    android:id="@+id/relative_layout"
+    android:layout_width="190dp"
+    android:layout_height="98dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.495"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txtMail"
-    app:layout_constraintVertical_bias="0.159"
-    tools:ignore="SmallSp" />
+    app:layout_constraintTop_toBottomOf="@+id/tascaTextDades"
+    app:layout_constraintVertical_bias="0.139">
+
+    <ListView
+      android:id="@+id/simpleListView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

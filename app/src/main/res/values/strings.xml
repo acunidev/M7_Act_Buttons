@@ -4,6 +4,6 @@
   <string name="cognom">Cognom</string>
   <string name="telf">Telèfon</string>
   <string name="email">Email</string>
-  <string name="loremIpsum_dades">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat odio ultrices quam pulvinar, commodo tempus mauris euismod. Pellentesque ornare dignissim facilisis. Sed sed gravida ex. Maecenas a iaculis quam. Curabitur sollicitudin orci nunc, nec congue felis finibus vitae. Morbi ligula urna, fringilla non ligula ut, accumsan sodales risus. Alex Cunillera Morbi semper neque sed erat bibendum, in aliquam lorem accumsan.</string>
+  <string name="loremIpsum_dades">Lorem ipsum dolor sit amet,Maecenas a iaculis quam. accumsan sodales risus. Alex Cunillera Morbi semper neque sed erat bibendum, in aliquam lorem accumsan.</string>
   <string name="alex">Alex Cunillera</string>
 </resources>
