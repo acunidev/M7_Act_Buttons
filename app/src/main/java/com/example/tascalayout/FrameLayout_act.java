@@ -73,6 +73,11 @@ public class FrameLayout_act extends AppCompatActivity implements OnClickListene
         Intent te = new Intent(this, TascaText.class);
         startActivity(te);
         break;
+
+      case R.id.btnRecycler:
+        Intent rec = new Intent(this, RecicleViewActivty.class);
+        startActivity(rec);
+        break;
     }
   }
 }

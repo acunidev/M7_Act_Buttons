@@ -7,13 +7,13 @@
   tools:context=".FrameLayout_act">
 
   <Button
-    android:id="@+id/btnAct"
+    android:id="@+id/btnRecycler"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="100dp"
     android:layout_marginTop="270dp"
-    android:text="COMPARTIR"
-    android:textSize="25sp" />
+    android:text="Recyler Activity"
+    android:textSize="15sp" />
 
   <Switch
     android:id="@+id/btnSwitch"
