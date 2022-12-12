@@ -16,6 +16,7 @@ public class FrameLayout_act extends AppCompatActivity implements OnClickListene
   private ImageButton btnNext;
   private boolean isPressedBtnStar;
   private Button btnGoButtonsExtended;
+  private Button btnRec;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +31,14 @@ public class FrameLayout_act extends AppCompatActivity implements OnClickListene
     btnStar3 = (ImageButton) findViewById(R.id.btnStar3);
     btnNext = (ImageButton) findViewById(R.id.btnNext);
     btnGoButtonsExtended = findViewById(R.id.btnTascaFormulari);
+    btnRec = findViewById(R.id.btnRecycler);
 
     btnStar.setOnClickListener(this);
     btnStar2.setOnClickListener(this);
     btnStar3.setOnClickListener(this);
     btnNext.setOnClickListener(this);
     btnGoButtonsExtended.setOnClickListener(this);
+    btnRec.setOnClickListener(this);
 
   }
 
