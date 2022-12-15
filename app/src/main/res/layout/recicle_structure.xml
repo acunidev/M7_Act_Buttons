@@ -8,6 +8,7 @@
     android:id="@+id/lblTitulo"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:textAlignment="center"
     android:textSize="24sp"
     android:textStyle="bold" />
 
@@ -15,6 +16,7 @@
     android:id="@+id/lblSubtitulo"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:textAlignment="center"
     android:textSize="16sp"
     android:textStyle="normal" />
 </LinearLayout>

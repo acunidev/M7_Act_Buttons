@@ -2,8 +2,12 @@ package com.example.tascalayout;
 
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
@@ -29,6 +33,12 @@ public class AdaptadorTitulo extends RecyclerView.Adapter<AdaptadorTitulo.ViewHo
 
   @Override
   public void onBindViewHolder(@NonNull @NotNull ViewHolderTitulo holder, int position) {
+    Animation animationFade = AnimationUtils.loadAnimation(holder.itemView.getContext(),
+                                                           android.R.anim.slide_out_right);
+    Animation animationSlide = AnimationUtils.loadAnimation(holder.itemView.getContext(),
+                                                            android.R.anim.slide_in_left);
+    holder.itemView.setAnimation(animationFade);
+    holder.itemView.setAnimation(animationSlide);
     holder.asignarDatos(listTitulos.get(position));
   }
 
@@ -37,7 +47,7 @@ public class AdaptadorTitulo extends RecyclerView.Adapter<AdaptadorTitulo.ViewHo
     return listTitulos.size();
   }
 
-  public class ViewHolderTitulo extends ViewHolder {
+  public class ViewHolderTitulo extends ViewHolder implements OnClickListener {
 
     TextView titulo;
     TextView subtitulo;
@@ -46,12 +56,19 @@ public class AdaptadorTitulo extends RecyclerView.Adapter<AdaptadorTitulo.ViewHo
       super(itemView);
       titulo = itemView.findViewById(R.id.lblTitulo);
       subtitulo = itemView.findViewById(R.id.lblSubtitulo);
+      itemView.setOnClickListener(this);
 
     }
 
     public void asignarDatos(Titular titular) {
       titulo.setText(titular.getTitulo());
       subtitulo.setText(titular.getSubtitulo());
+    }
+
+    @Override
+    public void onClick(View view) {
+      Toast.makeText(itemView.getContext(), "Clicked on title: " + getAdapterPosition(),
+                     Toast.LENGTH_SHORT).show();
     }
   }
 }
